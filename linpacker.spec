@@ -11,7 +11,6 @@ License:	GPL
 Group:		Applications/Math
 Source0:	http://freehackers.org/~tnagy/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	ea4175629d728b634f8b4f4fa2ceac91
-# Source0-size:	470897
 Patch0:		%{name}-libdir.patch
 URL:		http://freehackers.org/~tnagy/linpacker/
 BuildRequires:	autoconf
