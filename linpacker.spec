@@ -2,7 +2,7 @@ Summary:	linpacker is a scientific tool for studying rectangle packings
 Summary(pl):	Naukowe narzêdzie do studiowania pakowania wielok±tów
 Name:		linpacker
 Version:	0.5.4.1
-Release:	1.1
+Release:	2
 %ifarch %{ix86}
 License:	GPL with BSD-licensed, closed-source plugins
 %else
@@ -12,8 +12,8 @@ Group:		Applications/Math
 Source0:	http://freehackers.org/~tnagy/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	ad64b4b8edede6605d7e51f839efe180
 # Source0-size:	470897
+Patch0:		%{name}-libdir.patch
 URL:		http://freehackers.org/~tnagy/linpacker/
-BuildRequires:	FHS-fixes (binary plugins in /usr/share/apps/linpacker/plugins)
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
@@ -28,6 +28,7 @@ Naukowe narzêdzie do studiowania pakowania wielok±tów.
 
 %prep
 %setup -q -n %{name}-%(echo %{version}|cut -f -3 -d .)
+%patch0
 
 %build
 cp -f /usr/share/automake/config.sub admin
@@ -48,11 +49,11 @@ install -D $RPM_BUILD_ROOT%{_datadir}/applications/kde/%{name}.desktop \
 
 # BSD license, sources not provided, only x86 binaries
 %ifnarch %{ix86}
-rm -rf $RPM_BUILD_ROOT%{_datadir}/apps/%{name}/plugins
+rm -rf $RPM_BUILD_ROOT%{_libdir}/%{name}/plugins
 %endif
 # compiled for i586
 %ifarch i386 i486
-rm -f $RPM_BUILD_ROOT%{_datadir}/apps/%{name}/plugins/*2DBP1*
+rm -f $RPM_BUILD_ROOT%{_libdir}/%{name}/plugins/*2DBP1*
 %endif
 
 %find_lang %{name}
