@@ -1,8 +1,8 @@
 Summary:	linpacker is a scientific tool for studying rectangle packings
 Summary(pl):	Naukowe narzêdzie do studiowania pakowania wielok±tów
 Name:		linpacker
-Version:	0.5.4.1
-Release:	2
+Version:	0.5.6
+Release:	0.1
 %ifarch %{ix86}
 License:	GPL with BSD-licensed, closed-source plugins
 %else
@@ -10,7 +10,7 @@ License:	GPL
 %endif
 Group:		Applications/Math
 Source0:	http://freehackers.org/~tnagy/%{name}/%{name}-%{version}.tar.bz2
-# Source0-md5:	ad64b4b8edede6605d7e51f839efe180
+# Source0-md5:	ea4175629d728b634f8b4f4fa2ceac91
 # Source0-size:	470897
 Patch0:		%{name}-libdir.patch
 URL:		http://freehackers.org/~tnagy/linpacker/
@@ -18,6 +18,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	qt-devel >= 3.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
