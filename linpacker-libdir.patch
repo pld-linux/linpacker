@@ -1,0 +1,16 @@
+--- src/plugins/Makefile.am~	2004-09-28 15:33:10.000000000 +0200
++++ src/plugins/Makefile.am	2004-10-13 09:59:35.000000000 +0200
+@@ -1,11 +1,11 @@
+ 
+ # this is the directory where the plugins are installed
+-plugindatadir = $(kde_datadir)/linpacker/plugins
++plugindatadir = $(libdir)/linpacker/plugins
+ plugindata_SCRIPTS = plugin2DBP1 plugin2DBP2 plugin2DBP3
+ 
+ # warning :
+ # linpacker checks if there are plugins installed using pluginlist.doc
+-plugindatadatadir = $(kde_datadir)/linpacker/plugins
++plugindatadatadir = $(libdir)/linpacker/plugins
+ plugindata_DATA = pluginlist.doc
+ 
+ # licence for the plugins (there is only one for the moment)
