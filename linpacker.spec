@@ -70,5 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/apps/%{name}
 %{_datadir}/config.kcfg/%{name}*
+%{_datadir}/mimelnk/application/*.desktop
 %{_iconsdir}/*/*/*/%{name}.png
 %{_desktopdir}/%{name}.desktop
