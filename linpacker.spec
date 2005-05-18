@@ -68,6 +68,9 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%ifarch %{ix86}
+%{_libdir}/linpacker
+%endif
 %{_datadir}/apps/%{name}
 %{_datadir}/config.kcfg/%{name}*
 %{_datadir}/mimelnk/application/*.desktop
