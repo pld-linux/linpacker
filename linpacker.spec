@@ -12,6 +12,7 @@ Group:		Applications/Math
 Source0:	http://freehackers.org/~tnagy/%{name}/%{name}-%{version}.tar.bz2
 # Source0-md5:	ea4175629d728b634f8b4f4fa2ceac91
 Patch0:		%{name}-libdir.patch
+Patch1:		%{name}-desktop.patch
 URL:		http://freehackers.org/~tnagy/linpacker/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -28,7 +29,8 @@ Naukowe narzêdzie do studiowania pakowania wielok±tów.
 
 %prep
 %setup -q -n %{name}-%(echo %{version}|cut -f -3 -d .)
-%patch0
+%patch0 -p0
+%patch1 -p1
 
 %build
 cp -f /usr/share/automake/config.sub admin
