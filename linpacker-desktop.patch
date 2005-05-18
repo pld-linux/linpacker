@@ -1,0 +1,21 @@
+--- linpacker-0.5.6/src/linpacker.desktop~	2005-05-18 08:59:59.000000000 +0200
++++ linpacker-0.5.6/src/linpacker.desktop	2005-05-18 08:59:59.000000000 +0200
+@@ -6,14 +6,8 @@
+ Icon=linpacker
+ Type=Application
+ DocPath=linpacker/linpacker.html
+-Comment=A KDE Application
+-Comment[ca]=Una aplicaciÃ³ per a KDE
+-Comment[da]=Et KDE program
+-Comment[de]=Eine KDE-Anwendung
+-Comment[es]=Una aplicaciÃ³n de KDE
+-Comment[et]=KDE rakendus
+-Comment[fr]=Une application pour KDE.
+-Comment[is]=KDE forrit
+-Comment[nb]=Et KDE program
++Comment=Scientific tool for studying rectangle packings
++Comment[pl]=Naukowe narzêdzie do studiowania pakowania wielok±tów
+ Comment[xx]=xxA KDE Applicationxx
+-Terminal=0
++Terminal=false
++Categories=Qt;KDE;Education;Science;Math;
