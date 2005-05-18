@@ -1,0 +1,11 @@
+--- linpacker-0.5.6/admin/cvs.sh~	2005-05-18 18:46:07.000000000 +0200
++++ linpacker-0.5.6/admin/cvs.sh	2005-05-18 18:46:07.000000000 +0200
+@@ -64,7 +64,7 @@
+     echo "*** KDE requires automake 1.6.1 or newer"
+     exit 1
+     ;;
+-  automake*1.6.* | automake*1.7* | automake*1.8.* ) : ;;
++  automake*1.6.* | automake*1.7* | automake*1.8.* | automake*1.9.* ) : ;;
+   "" )
+     echo "*** AUTOMAKE NOT FOUND!."
+     echo "*** KDE requires automake 1.6.1 or newer"
