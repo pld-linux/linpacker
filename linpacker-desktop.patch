@@ -14,7 +14,7 @@
 -Comment[is]=KDE forrit
 -Comment[nb]=Et KDE program
 +Comment=Scientific tool for studying rectangle packings
-+Comment[pl]=Naukowe narzêdzie do studiowania pakowania wielok±tów
++Comment[pl]=Naukowe narzÄ™dzie do studiowania pakowania wielokÄ…tÃ³w
  Comment[xx]=xxA KDE Applicationxx
 -Terminal=0
 +Terminal=false
