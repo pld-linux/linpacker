@@ -9,12 +9,12 @@ License:	GPL with BSD-licensed, closed-source plugins
 License:	GPL
 %endif
 Group:		Applications/Math
-Source0:	http://freehackers.org/~tnagy/%{name}/%{name}-%{version}.tar.bz2
+Source0:	http://freehackers.org/~tnagy/linpacker/%{name}-%{version}.tar.bz2
 # Source0-md5:	ea4175629d728b634f8b4f4fa2ceac91
 Patch0:		%{name}-libdir.patch
 Patch1:		%{name}-desktop.patch
 Patch2:		%{name}-am19.patch
-URL:		http://freehackers.org/~tnagy/linpacker/
+URL:		http://freehackers.org/~tnagy/linpacker.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
