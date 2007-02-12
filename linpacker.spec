@@ -1,5 +1,5 @@
 Summary:	linpacker is a scientific tool for studying rectangle packings
-Summary(pl):	Naukowe narzêdzie do studiowania pakowania wielok±tów
+Summary(pl.UTF-8):   Naukowe narzÄ™dzie do studiowania pakowania wielokÄ…tÃ³w
 Name:		linpacker
 Version:	0.5.6
 Release:	2
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 linpacker is a scientific tool for studying rectangle packings.
 
-%description -l pl
-Naukowe narzêdzie do studiowania pakowania wielok±tów.
+%description -l pl.UTF-8
+Naukowe narzÄ™dzie do studiowania pakowania wielokÄ…tÃ³w.
 
 %prep
 %setup -q -n %{name}-%(echo %{version}|cut -f -3 -d .)
