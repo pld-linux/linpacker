@@ -1,5 +1,5 @@
 Summary:	linpacker is a scientific tool for studying rectangle packings
-Summary(pl.UTF-8):   Naukowe narzędzie do studiowania pakowania wielokątów
+Summary(pl.UTF-8):	Naukowe narzędzie do studiowania pakowania wielokątów
 Name:		linpacker
 Version:	0.5.6
 Release:	2
